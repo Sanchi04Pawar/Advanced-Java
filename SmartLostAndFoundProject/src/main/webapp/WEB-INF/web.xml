@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="6.0" xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd">
+
+    <display-name>SmartLostAndFoundProject</display-name>
+
+    <!-- Register Servlet -->
+    <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>com.lostfound.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+
+    <!-- Login Servlet -->
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.lostfound.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+
+    <!-- Add Item Servlet -->
+    <servlet>
+        <servlet-name>AddItemServlet</servlet-name>
+        <servlet-class>com.lostfound.AddItemServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddItemServlet</servlet-name>
+        <url-pattern>/additem</url-pattern>
+    </servlet-mapping>
+
+    <!-- View Items Servlet -->
+    <servlet>
+        <servlet-name>ViewItemServlet</servlet-name>
+        <servlet-class>com.lostfound.ViewItemServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ViewItemServlet</servlet-name>
+        <url-pattern>/viewitem</url-pattern>
+    </servlet-mapping>
+
+    <!-- Logout Servlet -->
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>com.lostfound.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+
+    <!-- Delete Single Item Servlet -->
+    <servlet>
+        <servlet-name>DeleteItem</servlet-name>
+        <servlet-class>com.lostfound.DeleteItem</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteItem</servlet-name>
+        <url-pattern>/deleteitem</url-pattern>
+    </servlet-mapping>
+
+    <!-- Delete All Items Servlet -->
+    <servlet>
+        <servlet-name>DeleteItemsServlet</servlet-name>
+        <servlet-class>com.lostfound.DeleteItemsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteItemsServlet</servlet-name>
+        <url-pattern>/deleteitems</url-pattern>
+    </servlet-mapping>
+
+    <!-- Session Timeout -->
+    <session-config>
+        <session-timeout>30</session-timeout>
+    </session-config>
+
+    <!-- Welcome File -->
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+</web-app>

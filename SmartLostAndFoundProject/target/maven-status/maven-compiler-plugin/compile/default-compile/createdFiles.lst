@@ -1,0 +1,13 @@
+com\lostfound\DBConnection.class
+com\lostfound\smartlostandfoundproject\resources\JakartaEE10Resource.class
+com\lostfound\User.class
+com\lostfound\DeleteItemsServlet.class
+com\lostfound\LoginServlet.class
+com\lostfound\RegisterServlet.class
+com\lostfound\ViewItemServlet.class
+com\lostfound\Item.class
+com\lostfound\LogoutServlet.class
+com\lostfound\smartlostandfoundproject\JakartaRestConfiguration.class
+com\lostfound\UserDAO.class
+com\lostfound\AddItemServlet.class
+com\lostfound\ItemDAO.class
